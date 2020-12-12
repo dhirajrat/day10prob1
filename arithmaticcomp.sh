@@ -1,11 +1,13 @@
 #!/bin/bash
 
 read -p "enter three inputs" a b c
+declare -A arop
 
-res=$(( $a + $b * $c ))
+arop[res]=$(( $a + $b * $c ))
 
-res1=$(( $a * $b + $c ))
+arop[res1]=$(( $a * $b + $c ))
 
-res2=$(( $c + $a / $b ))
+arop[res2]=$(( $c + $a / $b ))
 
-res3=$(( $a % $b + $c ))
+arop[res3]=$(( $a % $b + $c ))
+
